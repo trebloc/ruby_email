@@ -3,21 +3,21 @@ Mail.defaults do
   delivery_method :smtp, { :address   => "smtp.sendgrid.net",
                            :port      => 587,
                            :domain    => "yourdomain.com",
-                           :user_name => "yourusername@domain.com",
-                           :password  => "yourPassword",
+                           :user_name => "thenathanator",
+                           :password  => "Cy8saY8rYob2kE",
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end
 
 mail = Mail.deliver do
-  to 'yourRecipient@domain.com'
-  from 'Your Name <name@domain.com>'
-  subject 'This is the subject of your email'
+  to 'colbert.tse@gmail.com'
+  from 'Colbert Tse <ctse77@alum.berkeley.edu>'
+  subject 'Welcome Email'
   text_part do
-    body 'Hello world in text'
+    body 'Thank you for signing up.'
   end
   html_part do
     content_type 'text/html; charset=UTF-8'
-    body '<b>Hello world in HTML</b>'
+    body '<b>Thank you for signing up.</b>'
   end
 end
