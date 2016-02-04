@@ -3,8 +3,8 @@ Mail.defaults do
   delivery_method :smtp, { :address   => "smtp.sendgrid.net",
                            :port      => 587,
                            :domain    => "yourdomain.com",
-                           :user_name => "thenathanator",
-                           :password  => "Cy8saY8rYob2kE",
+                           :user_name => "trebloc",
+                           :password  => "yourpassword",
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end
